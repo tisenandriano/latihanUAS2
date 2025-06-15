@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Website Lengkap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Belajar HTML, CSS, dan JavaScript</h1>
+    <p>Website latihan untuk persiapan ujian</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="#form">Form</a></li>
+      <li><a href="#tabel">Tabel</a></li>
+      <li><a href="#gambar">Gambar</a></li>
+      <li><a href="#interaktif">JavaScript</a></li>
+    </ul>
+  </nav>
+
+    <section id="search-section">
+        <h2>Cari Nama di Daftar</h2>
+        <input type="text" id="searchInput" placeholder="Cari nama...">
+        <button onclick="cariNama()">Cari</button>
+        <p id="hasilCari"></p>
+    </section>
+
+    <section id="daftar-nama">
+    <h3>Daftar Nama</h3>
+    <ul id="namaList">
+        <li>Ani</li>
+        <li>Budi</li>
+        <li>Citra</li>
+        <li>Dewi</li>
+    </ul>
+    </section>
+
+
+  <!-- FORM HTML -->
+  <section id="form">
+    <h2>Formulir HTML</h2>
+    <form id="contohForm">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <button type="submit">Kirim</button>
+    </form>
+    <p id="outputForm"></p>
+  </section>
+
+  <!-- TABEL HTML -->
+  <section id="tabel">
+    <h2>Contoh Tabel</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Nilai</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Ani</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Budi</td>
+          <td>85</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- GAMBAR -->
+  <section id="gambar">
+    <h2>Contoh Gambar</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyaTjHQDOCXuD5tarNAwgb-f-AG4MvwYg6GkU93Ptrg974ClbNGjO-k1sfZ5-7qNcZoqs&usqp=CAU" alt="Contoh Gambar">
+  </section>
+
+  <!-- INTERAKSI JAVASCRIPT -->
+  <section id="interaktif">
+    <h2>Interaksi JavaScript</h2>
+
+    <button onclick="ubahWarna()">Ubah Warna Background</button>
+    <button onclick="tampilkanWaktu()">Tampilkan Waktu</button>
+    <p id="waktu"></p>
+
+    <h3>Operasi Aritmatika</h3>
+    <input type="number" id="angka1" placeholder="Angka 1">
+    <input type="number" id="angka2" placeholder="Angka 2">
+    <button onclick="jumlahkan()">Jumlahkan</button>
+    <p id="hasilJumlah"></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Website Latihan Ujian</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
